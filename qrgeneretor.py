@@ -2,6 +2,7 @@ import Pyro4
 import qrcode
 from tkinter import messagebox
 from PIL import ImageTk
+import io
 
 @Pyro4.expose
 class QRCodeServer:

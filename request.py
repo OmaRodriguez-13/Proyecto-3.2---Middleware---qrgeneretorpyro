@@ -20,9 +20,9 @@ class Interfaz:
         self.root.resizable(False, False)
 
         # Crear entrada de URL y botón para generar el código QR
-        self.url_label = tk.Label(self.root, text="Enter URL:")
+        self.url_label = tk.Label(self.root, text="Introduce la URL:")
         self.url_entry = tk.Entry(self.root)
-        self.generate_button = tk.Button(self.root, text="Generate QR Code", command=self.generate_qr_code)
+        self.generate_button = tk.Button(self.root, text="Generar Código QR", command=self.generate_qr_code)
         self.url_label.pack()
         self.url_entry.pack(fill=tk.X, padx=5)
         self.generate_button.pack(pady=5)
@@ -41,18 +41,14 @@ class Interfaz:
             return
 
         try:
-            qr_code_bytes = self.qr_server.generate_qr_code(url)
-            #qr_code_bytes = qr_code_dict['image_bytes']
+            qr_code_bytes2 = self.qr_server.generate_qr_code(url)
         except:
             messagebox.showerror("Error", "No se pudo generar el código QR")
             return
 
          # Convertir los datos de la imagen en un objeto PhotoImage de Tkinter y mostrarla
-        #qr_code_bytes = qr_data['image_bytes']
-        img = Image.open(io.BytesIO(qr_code_bytes))
-        img.show()
-        img.save("qr_client.png")
-
+        qr_code_stream = io.BytesIO(qr_code_bytes2)
+        img = Image.open(qr_code_stream)
 
         photo_image = ImageTk.PhotoImage(img)
         self.image_label.configure(self.image_frame,image=photo_image)
