@@ -36,6 +36,8 @@ class Interfaz:
         self.image_label.pack()
         self.image_frame.pack(pady=5)
 
+        self.i = 1
+
     # Método para generar el código QR
     def generate_qr_code(self):
         url = self.url_entry.get()
@@ -65,15 +67,18 @@ class Interfaz:
         # Redimensionar la imagen a 200x200 píxeles
         img = img.resize((200, 200))
 
+        
         # Guardar la imagen en el sistema del cliente
-        with open(f"qr_client_{url}.png", "wb") as f:
-            img.save(f)    
+        with open(f"qr_client_{self.i}.png", "wb") as f:
+            img.save(f)   
+
+        self.i += 1 
 
         #Mostrar la imagen en el label
         photo_image = ImageTk.PhotoImage(img)
         self.image_label.config(image=photo_image)
         self.image_label.image = photo_image
-   
+
 server_ip = simpledialog.askstring(
     "Dirección IP del servidor", "Ingrese la dirección IP del servidor:")
 if server_ip is None:
