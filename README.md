@@ -41,6 +41,7 @@ pip install Pillow
 ### Instrucciones de uso
 
 Cambie la linea 17 del archivo [server.py] por la ip de su equipo "servidor".
+
 [![line17.png](https://i.postimg.cc/y8q3dHgM/line17.png)](https://postimg.cc/ykP8Q2Tj)
 
 ```bash
@@ -78,8 +79,11 @@ python request.py
 ```
 
 En las ventanas siguientes deberá introducir la ip y el puerto del servidor, respectivamente.
+
 [![ip.png](https://i.postimg.cc/cC0dKdGJ/ip.png)](https://postimg.cc/BLYrk96W)
+
 [![port.png](https://i.postimg.cc/bNZBQKYY/port.png)](https://postimg.cc/crNhWk8P)
+
 [![request.png](https://i.postimg.cc/J0kdWk2D/request.png)](https://postimg.cc/303ZXd7Y)
 
 ## Testeo
@@ -90,10 +94,13 @@ Dejar en ejecución el servidor hasta que se desee.
 
 
 ### Cliente [client.py]
+
 [![gui.png](https://i.postimg.cc/7hZtfRhz/gui.png)](https://postimg.cc/5YDSrnw9)
 
 El usuario deberá introducir una URL o cualquier texto (alfanúmerico) que desee para poder generar el código QR que se mostrará en su interfaz.
+
 [![codigo.png](https://i.postimg.cc/90sPCg7C/codigo.png)](https://postimg.cc/wRcRkV2G)
 
 Las imágenes (códigos QR) se irán almacenando en la memoria del equipo cliente.
+
 [![memory.png](https://i.postimg.cc/tR8mXBys/memory.png)](https://postimg.cc/YjfxRfv7)
