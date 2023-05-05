@@ -16,8 +16,8 @@ git clone https://github.com/OmaRodriguez-13/Proyecto-3.2---Middleware---qrgener
 
 ### Requerimientos
 
-### **Importante: Conexión a la misma red**
-### Editor de código (por ejemplo: [Visual Studio Code]
+#### **Importante: Conexión a la misma red**
+#### Editor de código (por ejemplo: [Visual Studio Code]
 #### Python 3.11.2
 #### Pyro4:
 
