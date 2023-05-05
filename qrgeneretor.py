@@ -1,7 +1,7 @@
 import Pyro4
+from Pyro4 import socketutil
 import pyqrcode
 from tkinter import messagebox
-from PIL import ImageTk
 from io import BytesIO
 import base64
 
@@ -9,34 +9,12 @@ import base64
 class QRCodeServer:
     def generate_qr_code(self, url):
         qr = pyqrcode.create(url)
-        #own = pyqrcode.create(url)
-        #own.save("qr_server.png")
-        #with open("qr_serer.png", "rb") as f:
-         #   own = f.read()
         buffer = BytesIO()
         qr.png(buffer)
         qr_bytes = buffer.getvalue()
         return {'data': base64.b64encode(qr_bytes).decode('ascii'), 'encoding': 'base64'}
-    '''
-    def generate_qr_code(self, url):
-        img = qrcode.make(url)
-        img.save("qr.png")
-        with open("qr.png", "rb") as f:
-            qr_code_bytes = f.read()
-        return qr_code_bytes
-    '''
-    '''
-    def generate_qr_code(self, url):
-        qr = qrcode.QRCode(version=1, box_size=10, border=5)
-        qr.add_data(url)
-        qr.make(fit=url)
-        img = qr.make_image(fill_color="black", back_color="white")
-        img.save("qr.png")
-        with open("qr.png", "rb") as f:
-            qr_code = f.read()
-            return qr_code
-    '''
-ip = Pyro4.socketutil.getInterfaceAddress("192.168.1.101")
+    
+ip = socketutil.getIpAddress("su_ip") #Cambiar por la ip del equipo servidor
 daemon = Pyro4.Daemon(host=ip)
 
 qr_server = QRCodeServer()
