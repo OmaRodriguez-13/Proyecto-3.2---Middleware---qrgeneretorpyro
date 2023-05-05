@@ -63,7 +63,7 @@ python qrgeneretor.py
 
 El servidor devolverá la URI creada.
 
-[![server.png](https://i.postimg.cc/0QMJWNVx/server.png)](https://postimg.cc/TLxwhT8H)
+[![qrgeneretor.png](https://i.postimg.cc/xTGbFd16/qrgeneretor.png)](https://postimg.cc/Yh99vMgF)
 
 ### Cliente
 
@@ -78,19 +78,22 @@ python request.py
 ```
 
 En las ventanas siguientes deberá introducir la ip y el puerto del servidor, respectivamente.
-[![ip.png](https://i.postimg.cc/CK9SJknZ/ip.png)](https://postimg.cc/cK7pLKmZ)
-[![port.png](https://i.postimg.cc/rskc2TJM/port.png)](https://postimg.cc/0Mch7LFB)
-[![client.png](https://i.postimg.cc/j5TksSGg/client.png)](https://postimg.cc/67Hhct6n)
+[![ip.png](https://i.postimg.cc/cC0dKdGJ/ip.png)](https://postimg.cc/BLYrk96W)
+[![port.png](https://i.postimg.cc/bNZBQKYY/port.png)](https://postimg.cc/crNhWk8P)
+[![request.png](https://i.postimg.cc/J0kdWk2D/request.png)](https://postimg.cc/303ZXd7Y)
 
 ## Testeo
 
 ### Servidor [server.py]
 
-Introducir la palabra secreta "secretword" a adivinar (sin importar mayúsculas y minúsculas), así como la pistas de ayuda al cliente (principal y secundaria).
-[![secretword.png](https://i.postimg.cc/RhjNJhwf/secretword.png)](https://postimg.cc/BPBqdqYQ)
-[![principal.png](https://i.postimg.cc/dQ7R3yYh/principal.png)](https://postimg.cc/Th65Hhhx)
-[![pista.png](https://i.postimg.cc/Vk5zPmMP/pista.png)](https://postimg.cc/DSV9qVBx)
+Dejar en ejecución el servidor hasta que se desee.
 
 
 ### Cliente [client.py]
+[![gui.png](https://i.postimg.cc/7hZtfRhz/gui.png)](https://postimg.cc/5YDSrnw9)
 
+El usuario deberá introducir una URL o cualquier texto (alfanúmerico) que desee para poder generar el código QR que se mostrará en su interfaz.
+[![codigo.png](https://i.postimg.cc/90sPCg7C/codigo.png)](https://postimg.cc/wRcRkV2G)
+
+Las imágenes (códigos QR) se irán almacenando en la memoria del equipo cliente.
+[![memory.png](https://i.postimg.cc/tR8mXBys/memory.png)](https://postimg.cc/YjfxRfv7)
