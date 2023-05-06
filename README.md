@@ -89,12 +89,12 @@ En las ventanas siguientes deberá introducir la ip y el puerto del servidor, re
 
 ## Testeo
 
-### Servidor [server.py]
+### Servidor [qrgeneretor.py]
 
 Dejar en ejecución el servidor hasta que se desee.
 
 
-### Cliente [client.py]
+### Cliente [request.py]
 
 [![gui.png](https://i.postimg.cc/7hZtfRhz/gui.png)](https://postimg.cc/5YDSrnw9)
 
