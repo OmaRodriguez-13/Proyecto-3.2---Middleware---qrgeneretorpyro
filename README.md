@@ -18,7 +18,6 @@ git clone https://github.com/OmaRodriguez-13/Proyecto-3.2---Middleware---qrgener
 
 - Importante: Conexión a la misma red.
 - Desactivar Firewall de Windows para evitar cualquier error de conexión.
-- MySQL Workbench 8.0 CE.
 - Editor de código (por ejemplo: [Visual Studio Code]).
 - Python 3.11.2
 
