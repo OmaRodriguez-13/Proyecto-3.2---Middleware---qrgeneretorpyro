@@ -9,7 +9,7 @@ Descargar el zip que contiene los archivos fuente del proyecto.
 ### Vía git 
 
 ```bash
-git clone https://github.com/OmaRodriguez-13/Proyecto-3.2---Middleware---qrgeneretorpyro
+git clone https://github.com/OmaRodriguez-13/Proyecto-3.2---Middleware---qrgeneretorpyro.git
 ```
 
 ## Guía Rápida
