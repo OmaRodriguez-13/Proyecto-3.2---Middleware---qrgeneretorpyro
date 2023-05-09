@@ -22,6 +22,7 @@ git clone https://github.com/OmaRodriguez-13/Proyecto-3.2---Middleware---qrgener
 - Editor de código (por ejemplo: [Visual Studio Code]).
 - Python 3.11.2
 
+#### Pyro4
 ```bash
 pip install pyro4
 ```
