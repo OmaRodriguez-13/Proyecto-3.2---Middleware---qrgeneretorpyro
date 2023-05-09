@@ -16,10 +16,11 @@ git clone https://github.com/OmaRodriguez-13/Proyecto-3.2---Middleware---qrgener
 
 ### Requerimientos
 
-#### **Importante: Conexión a la misma red**
-#### Editor de código (por ejemplo: [Visual Studio Code]
-#### Python 3.11.2
-#### Pyro4:
+- Importante: Conexión a la misma red.
+- Desactivar Firewall de Windows para evitar cualquier error de conexión.
+- MySQL Workbench 8.0 CE.
+- Editor de código (por ejemplo: [Visual Studio Code]).
+- Python 3.11.2
 
 ```bash
 pip install pyro4
@@ -44,6 +45,8 @@ pip install Pillow
 Cambie la linea 17 del archivo [server.py] por la ip de su equipo "servidor".
 
 [![line17.png](https://i.postimg.cc/y8q3dHgM/line17.png)](https://postimg.cc/ykP8Q2Tj)
+
+Si no conoce su dirección ip de su equipo, puede usar el siguiente comando en cmd.
 
 ```bash
 ipconfig
